@@ -8,8 +8,8 @@ public class Main {
         String myText1 = "This is a simple text";
         String myText2 = new String("This is a simple text");
 
-        System.out.println("myText1: " + myText1);
-        System.out.println("myText2: " + myText2);
+        System.out.println("1. method: String myText1 = This is a simple text  => " + myText1);
+        System.out.println("2. method (with operator new): String myText2 = new String(This is a simple text) => " + myText2);
         System.out.println("--------------------------------------");
 
         /*Immutability, advantages:
@@ -21,12 +21,12 @@ public class Main {
 
         System.out.println("Immutability");
         String text = "This is ";
-        System.out.println("text 1st version: "+text);
+        System.out.println("1st version for text: "+text);
         text += "my text";
-        System.out.println("text 2nd version (we added text): "+text);
+        System.out.println("2nd version => text += my text = "+text);
         text = "my text";
-        System.out.println("text New version (we replace text, we changed reference): "+text);
-        System.out.println("--------------------------------------");
+        System.out.println("New version of text (we replaced: text = my text, we changed reference!), text: "+text);
+        System.out.println("--------------------------------------\n");
 
         System.out.println("Methods in String class: \n");
 
@@ -43,7 +43,7 @@ public class Main {
         System.out.print("first String : " + first);
         String second = "Margaret Krawczyk.";
         System.out.println(", second String: " + second);
-        System.out.println("- use the "+" operator");
+        System.out.println("- use the + operator");
         String finalText = first + second;
         System.out.println("finalText = first + second = " + finalText);
         System.out.println("- use concat() method");
@@ -55,7 +55,7 @@ public class Main {
         String textEquals2 = "Text to compare";
         System.out.println("textEquals2: "+textEquals1+" ,textEquals2: "+textEquals2);
         System.out.println("textEquals1.equals(textEquals2): "+textEquals1.equals(textEquals2));
-        System.out.println("Dont use operator == ! \n");
+        System.out.println("Don't use operator == ! \n");
 
         System.out.println("4. Length() ");
         System.out.println("Length for textEquals1: textEquals1.length() = "+textEquals1.length()+"\n");
