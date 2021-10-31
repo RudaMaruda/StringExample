@@ -64,8 +64,43 @@ public class Main {
         String example1 = "tHis Is the eXAmpLe";
         System.out.println("example1: "+example1);
         System.out.println("example1.toUpperCase()= " + example1.toUpperCase());
-        System.out.println("example1.toLowerCase()= " + example1.toLowerCase());
+        System.out.println("example1.toLowerCase()= " + example1.toLowerCase()+"\n");
 
+        System.out.println("6. IndexOf() - return the number of index for search sentence");
+        String textValue = "This is the test value";
+        System.out.println("textValue: "+textValue);
+        System.out.println("textValue.indexOf(This): "+textValue.indexOf("This"));
+        System.out.println("textValue.indexOf(is): "+textValue.indexOf("is")+"\n"); // space " " is also considered
+
+        System.out.println("7. ReplaceAll() ");
+        System.out.println("textValue: "+textValue);
+        System.out.println("textValue.replaceAll(i,YYY): "+textValue.replaceAll("i","YYY")+"\n");
+
+        System.out.println("8. Substring() - cut String with provided index position");
+        System.out.println("textValue: "+textValue);
+        System.out.println("Only with beginIndex: textValue.substring(3): "+textValue.substring(3));
+        System.out.println("With beginIndex: textValue.substring(1,10): "+textValue.substring(1,10));
+        System.out.println("With beginIndex and endIndex: textValue.substring(0,10): "+textValue.substring(0,10)+"\n");
+
+        System.out.println("9. Contains() ");
+        String exampleText = "Example text";
+        System.out.println("exampleText = "+exampleText);
+        System.out.println("exampleText.contains(xam): "+exampleText.contains("xam"));
+        System.out.println("exampleText.contains(Text): "+exampleText.contains("Text")+"\n");
+
+        System.out.println("10. Trim() - delete space at begin and end of String");
+        String textValueWithSpace = "  This is the test value   ";
+        System.out.println("textValueWithSpace: "+textValueWithSpace +".");
+        System.out.println("textValueWithSpace.trim(): "+textValueWithSpace.trim()+"."+"\n");
+
+        System.out.println("11. IsEmpty()");
+        System.out.println("textValueWithSpace: "+textValueWithSpace);
+        System.out.println("textValueWithSpace.isEmpty(): "+textValueWithSpace.isEmpty()+"\n");
+
+        System.out.println("12. IsBlank()  - delete space at begin and end of String and check if String is blank");
+        String space = "   ";
+        System.out.println("String space: "+space+".");
+        System.out.println("space.isBlank(): "+space.isBlank()+" ");
 
     }
 }
